@@ -1,0 +1,127 @@
+---
+title: "UI Pack Installation Guide "
+description: "In this guide, you will learn to setup any CUBOIDE's UI Pack using a resourcepack management plugin and DeluxeMenus"
+---
+
+<Info>
+  **Before you begin**
+
+  1. Install one of ItemsAdder, Nexo or Oraxen and its dependencies (if any) on your server
+  2. Install DeluxeMenus on your server
+  3. Download the UI pack you want to install
+</Info>
+
+## **1 ⬩ Add the content in-game**
+
+<Tabs>
+  <Tab title="ItemsAdder">
+    <Steps>
+      <Step title="Setup the textures">
+        To be able to use our new visuals, we have to register them to the game.
+
+        <Tabs>
+          <Tab title="It's my first CUBOIDE pack">
+            1. Open your Minecraft server files and navigate to `plugins/ItemsAdder/contents/`
+            2. Unzip the UI Pack file and open the resulting folder
+            3. Navigate to `ItemsAdder Setup/ItemsAdder/contents/`
+            4. Copy and paste the `cuboide/`subfolder in your server files
+          </Tab>
+          <Tab title="I installed other CUBOIDE packs">
+            1. Open your Minecraft server files and navigate to `plugins/ItemsAdder/contents/cuboide/`
+            2. Unzip the UI Pack file and open the resulting folder
+            3. Navigate to `ItemsAdder Setup/ItemsAdder/contents/cuboide/`
+            4. Copy and paste the folder's content in your server files
+          </Tab>
+        </Tabs>
+      </Step>
+      <Step title="Override Minecraft translations">
+        Translations are used to hide the "Inventory" text showing in the middle of player inventories. Not overriding them won't break your interfaces but will have a significant esthetic impact.
+
+        **Step-by-step guide**
+
+        1. In the pack files, navigate to `ItemsAdder Setup/ItemsAdder/contents/`
+        2. Copy the `minecraft/` subfolder
+        3. In your server files, navigate to `plugins/ItemsAdder/contents/`
+        4. Paste the folder
+
+        <Warning>
+          If you have other translation files from other contents, check that copying and pasting the file won't delete other necessary translation overrides.
+        </Warning>
+      </Step>
+    </Steps>
+  </Tab>
+  <Tab title="Oraxen">
+    <Steps>
+      <Step title="Prepare the terrain">
+        1. Open your Minecraft server files and navigate to `plugins/Oraxen/`
+        2. Unzip the UI Pack file and open the resulting folder
+        3. Navigate to `Oraxen Setup/Oraxen/`
+      </Step>
+      <Step title="Add the textures">
+        To be able to use our new visuals, we have to register them to the game.
+
+        <Tabs>
+          <Tab title="It's my first CUBOIDE pack">
+            1. In your server and pack files, navigate to `pack/textures/`
+            2. Copy and paste the `cuboide/` subfolder in your server files
+          </Tab>
+          <Tab title="I installed other CUBOIDE packs">
+            1. In your server files, navigate to `pack/textures/`
+            2. In your pack files, navigate to `pack/textures/cuboide/`
+            3. Copy and paste the `cuboide/` subfolder in your server files
+          </Tab>
+        </Tabs>
+      </Step>
+      <Step title="Configure the textures">
+        **GUIs**
+
+        1. In your server and pack files, navigate to `glyphs/`
+        2. Copy and paste the `.yml` file in your server files
+
+        **Icons**
+
+        1. In your server and pack files, navigate to `items/`
+        2. Copy and paste the `.yml` file in your server files
+      </Step>
+      <Step title="Override Minecraft translations">
+        Translations are used to hide the "Inventory" text showing in the middle of player inventories. Not overriding them won't break your interfaces but will have a significant esthetic impact.
+
+        **Step-by-step guide**
+
+        1. In your server and pack files, navigate to `pack/`
+        2. Copy and paste the `lang/` subfolder in your server files
+
+        <Warning>
+          If you have other translation files from other contents, check that copying and pasting the file won't delete other necessary translation overrides.
+        </Warning>
+      </Step>
+    </Steps>
+  </Tab>
+</Tabs>
+
+## **2 ⬩ Use the textures in GUIs with DeluxeMenus**
+
+The textures are now available in-game. We now have to place them in the GUIs your players will use. That's where DeluxeMenus comes in.
+
+<Steps>
+  <Step title="Register the menus in DeluxeMenus' configuration">
+    1. Open your Minecraft server files and navigate to `plugins/DeluxeMenus/`
+    2. Open the `config.yml` file with any text editor and locate the `gui_menus` key
+    3. In the pack files, go to `ItemsAdder Setup/DeluxeMenus/` and open `config.yml`
+    4. Copy the content of the `gui_menus` block and paste it at the same location in your server's `config.yml` file.
+  </Step>
+  <Step title="Setup each menu's default configuration ">
+    <Tabs>
+      <Tab title="It's my first CUBOIDE pack">
+        1. Go back in your server files and open the `gui_menus/` folder
+        2. Do the same in the pack files
+        3. Copy and paste the `cuboide/` subfolder in your server files
+      </Tab>
+      <Tab title="I installed other CUBOIDE packs">
+        1. Go back in your server files and open the `gui_menus/cuboide/` folder
+        2. Do the same in the pack files
+        3. Copy and paste the folder's content in your server files
+      </Tab>
+    </Tabs>
+  </Step>
+</Steps>

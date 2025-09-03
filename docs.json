@@ -12,6 +12,9 @@
     "tabs": [
       {
         "tab": "Guides",
+        "pages": [
+          "guides/ui-pack-setup"
+        ],
         "groups": [
           {
             "group": "Getting started",
