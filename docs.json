@@ -26,10 +26,21 @@
     }
   },
   "footer": {
-    "socials": {
-      "discord": "https://discord.gg/375dATetQe",
-      "builtbybit": "https://builtbybit.com/cuboide",
-      "mcmodels": "https://mcmodels.net/vendors/172/cuboide"
+    "links": {
+      "items": [
+        {
+          "label": "Discord",
+          "href": "https://discord.gg/375dATetQe"
+        },
+        {
+          "label": "BuiltByBit",
+          "href": "https://builtbybit.com/cuboide"
+        },
+        {
+          "label": "MCModels",
+          "href": "https://mcmodels.net/vendors/172/cuboide"
+        },
+      ]
     }
   }
 }
