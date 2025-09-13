@@ -14,8 +14,8 @@
      ]
   },
   "logo": {
-    "light": "/favicon.svg",
-    "dark": "/favicon.svg"
+    "light": "logo/wordmark.svg",
+    "dark": "logo/wordmark.svg"
   },
   "navbar": {
     "links": [],
