@@ -26,7 +26,7 @@
     }
   },
   "footer": {
-    "links": {
+    "links": [{
       "items": [
         {
           "label": "Discord",
@@ -39,8 +39,8 @@
         {
           "label": "MCModels",
           "href": "https://mcmodels.net/vendors/172/cuboide"
-        },
+        }
       ]
-    }
+    }]
   }
 }
