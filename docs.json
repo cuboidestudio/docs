@@ -10,7 +10,8 @@
   "favicon": "/favicon.svg",
   "navigation": {
      "pages": [
-       "guides/ui-pack-setup"
+       "guides/ui-pack-setup",
+       "guides/iconic-pack-setup"
      ]
   },
   "logo": {
