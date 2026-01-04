@@ -1,0 +1,73 @@
+---
+title: "Iconic Pack Installation Guide "
+description: "In this guide, you will learn to setup any CUBOIDE's Iconic Pack using a resourcepack management plugin"
+---
+
+<Info>
+  **Before you begin**
+
+  1. Install one of ItemsAdder, Nexo or Oraxen and its dependencies (if any) on your server
+  2. Download the Iconic pack you want to install
+</Info>
+
+## **1 ⬩ Add the content in-game**
+
+<Tabs>
+  <Tab title="ItemsAdder">
+    <Steps>
+      <Step title="Setup the textures">
+        To be able to use our new visuals, we have to register them to the game.
+
+        <Tabs>
+          <Tab title="It's my first CUBOIDE pack">
+            1. Open your Minecraft server files and navigate to `plugins/ItemsAdder/contents/`
+            2. Unzip the Iconic Pack file and open the resulting folder
+            3. Navigate to `ItemsAdder/contents/`
+            4. Copy and paste the `cuboide/`subfolder in your server files
+          </Tab>
+          <Tab title="I installed other CUBOIDE packs">
+            1. Open your Minecraft server files and navigate to `plugins/ItemsAdder/contents/cuboide/`
+            2. Unzip the Iconic Pack file and open the resulting folder
+            3. Navigate to `ItemsAdder/contents/cuboide/`
+            4. Copy and paste the folder's content in your server files
+          </Tab>
+        </Tabs>
+      </Step>
+    </Steps>
+  </Tab>
+  <Tab title="Nexo & Oraxen">
+    <Steps>
+      <Step title="Prepare the terrain">
+        1. Open your Minecraft server files and navigate to `plugins/Nexo/` or `plugins/Oraxen/`
+        2. Unzip the Iconic Pack file and open the resulting folder
+        3. Navigate to `Nexo/` or `Oraxen/`
+      </Step>
+      <Step title="Add the textures">
+        To be able to use our new visuals, we have to register them to the game.
+
+        <Tabs>
+          <Tab title="It's my first CUBOIDE pack">
+            1. In your server and pack files, navigate to `pack/textures/`
+            2. Copy and paste the `cuboide/` subfolder in your server files
+          </Tab>
+          <Tab title="I installed other CUBOIDE packs">
+            1. In your server files, navigate to `pack/textures/`
+            2. In your pack files, navigate to `pack/textures/cuboide/`
+            3. Copy and paste the `cuboide/` subfolder in your server files
+          </Tab>
+        </Tabs>
+      </Step>
+      <Step title="Configure the textures">
+        **Glyphs (icons for texts)**
+
+        1. In your server and pack files, navigate to `glyphs/`
+        2. Copy and paste the `.yml` file in your server files
+
+        **Items (icons for GUIs)**
+
+        1. In your server and pack files, navigate to `items/`
+        2. Copy and paste the `.yml` file in your server files
+      </Step>
+    </Steps>
+  </Tab>
+</Tabs>
