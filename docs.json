@@ -11,7 +11,8 @@
   "navigation": {
      "pages": [
        "guides/ui-pack-setup",
-       "guides/iconic-pack-setup"
+      "guides/iconic-pack-setup",
+      "guides/3d-pack-installation-guide"
      ]
   },
   "logo": {
